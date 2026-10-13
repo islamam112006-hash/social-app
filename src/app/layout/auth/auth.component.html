@@ -1,2 +1,25 @@
-<p>auth works!</p>
-<router-outlet></router-outlet>
+<div class="grid min-h-screen lg:grid-cols-2">
+  <aside
+    class="relative hidden overflow-hidden bg-linear-to-br from-blue-600 via-blue-700 to-indigo-900 p-12 text-white lg:flex lg:flex-col lg:justify-between"
+  >
+    <div aria-hidden="true" class="absolute -top-24 -right-24 size-80 rounded-full bg-white/10 blur-3xl"></div>
+    <div aria-hidden="true" class="absolute -bottom-32 -left-16 size-96 rounded-full bg-indigo-400/20 blur-3xl"></div>
+
+    <p class="relative text-xl font-bold tracking-tight">Route Social</p>
+
+    <div class="relative">
+      <h2 class="text-4xl leading-tight font-bold">Connect, share, and stay close to what matters.</h2>
+      <p class="mt-4 max-w-md text-blue-50/80">
+        Post your moments, follow people you care about, and join the conversation.
+      </p>
+    </div>
+
+    <p class="relative text-sm text-white/60">© 2026 Route Social</p>
+  </aside>
+
+  <main class="flex items-center justify-center bg-white p-6 sm:p-10">
+    <div class="w-full max-w-md">
+      <router-outlet />
+    </div>
+  </main>
+</div>
